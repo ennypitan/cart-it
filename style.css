@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:wght@300;400;600;700;800&family=Rubik:wght@300;400;500;600&display=swap');
+
+/*
+Fonts:
+    -Poppins: 300,400,600,700,800
+    -Rubik: 300,400,500,600
+*/
+:root{
+    --primary-color:#FF6B6B;
+    --secondary-color:#794AFA;
+    --secondary-dark-color:#453C5C;
+
+    --white-color:#ffffff;
+    --light-bg-color:#F2F3F5;
+    --border-color:#E5E8EC;
+    --dark-color:#0A021C;
+
+    --font-small:13px;
+    --font-smaller:11px;
+
+    --percent100:100%;
+    --percent50:50%;
+
+    --fw3:300;
+    --fw5:500;
+    --fw6:600;
+    --fw7:700;
+    --fw8:800;
+
+    --trans-background-color: background-color .3s, color .3s;
+    --trans-background:background-color .3s;
+    --trans-color:color .3s;
+}
+
+
+    /*something
+    is 
+    missing
+    */
+    *,::before,::after{
+        box-sizing: border-box;
+    }
+    body{
+        font-size: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        color: var(--dark-color);
+        background-color: var(--white-color);
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        -webkit-tap-highlight-color: transparent;
+    }
+    ul{
+        list-style: none;
+    }
+    img{
+        max-width: var(--percent100);
+        vertical-align: middle;
+    }
+    strong{
+        font-weight: var(--fw8);
+    }
+    table{
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    input::placeholder{
+        font:inherit;
+    }
+    h1,h2,h3,h4{
+        font-family: 'Poppins';
+    }
+    h1{
+        font-size: calc(1.3em + 1vw);
+        font-weight: var(--fw8);
+        line-height: 1;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 1.2em;
+        font-weight: var(--fw7);
+    }
+    h4{
+        font-size: 1em;
+        font-weight: var(--fw6);
+    }
+
+    /*---------------------
+        REUSEABLE SELECTORS
+    ------------------------*/
+    .container{
+        max-width: 12080px;
+        margin: 0 auto;
+        padding: 0 0.938em;
+    }
+    .column{
+        margin-left: -0.038em;
+        margin-right: -0.938em;
+    }
+    .column .row{
+        padding: 0 0.938em;
+    }
+    .flexwrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flexcenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexitem{
+        display: flex;
+        align-items: center;
+    }
+    .flexcol{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .main-links a:hover{
+        color: var(--secondary-color);
+    }
+    /*---------------------
+    *Structure Stling
+        00. Resuable Selecors
+
+        01. HEADER
+            a. Header Top
+            b. Header Nav
+            c. Header Main, Department Category
+            d. Search Form
+            e. Responsive Menu
+        02. SLIDER
+        03. BRANDS
+        04. PRODUCTS
+            a. Global Product
+            b. BIG product
+            c. Mini PRoduct
+            d. MAIN Product
+        05. BANNER
+            a. Newsletter
+            b. Widgets
+            c. Footer info
+        06. BOTTOM MENU
+            a. Search
+        07. OVERLAY
+        08. PAGE SINGLE
+            a. Breadcrumb
+            b. Product Details
+            c. PRoduct Description
+            d. Product Review
+            e. Product Review Form
+        09. PAGE SINGLE: SPECIAL OFFER
+        10. PAGE CATEGORY
+            a. Sidebar Product filter
+            b. Product Block
+        11. CART
+        12. PAGE CART
+        13. PAGE CHECKOUT
+        14. MODAL
+        15. RESPONSIVENESS
+    *
+    --------------------------*/
+
+    /*----------------------
+     01. HEADER
+   ------------------------ */
+
+    /*----------------------
+     01. HEADER
+     *-----------------------
+             a. Header Top
+   ------------------------ */
+
+
+
+
+
+
+
+
+
+    /*----------------------
+     01. HEADER
+     *-----------------------
+              b. Header Nav
+   ------------------------ */
+
+
+
+
+
+
+
+
+    /*----------------------
+     01. HEADER
+     *-----------------------
+              c. Header Main, Department Category
+   ------------------------ */
+
+
+
+
+
+
+
+
+
+
+    /*----------------------
+     01. HEADER
+     *-----------------------
+              d. Search Form
+   ------------------------ */
+
+
+
+
+
+
+
+    /*----------------------
+     01. HEADER
+     *-----------------------
+               e. Responsive Menu
+   ------------------------ */
+
+
+
