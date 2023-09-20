@@ -678,8 +678,22 @@ Fonts:
     /*----------------------
      01. HEADER
      *-----------------------
-             a. Header Top
+             a. Shop Page
    ------------------------ */
+/* Hero section */
+.shop-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45vh;
+    background-image: url(assets/banner/b1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
 
 
 /* 
