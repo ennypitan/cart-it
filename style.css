@@ -99,11 +99,10 @@ Fonts:
     .row{
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
         width: 100%;
         flex-flow: row wrap;
-        margin: auto;
-        position: relative;
     }
     /*---------------------
     *Structure Stling
@@ -162,13 +161,12 @@ Fonts:
    .nav-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-flow: row wrap;
     width: 90%;
     margin: auto;
    }
    .logo img{
-    width: 25%;
+    width: 20%;
    }
    .nav-bar{
     display: flex;
@@ -280,7 +278,6 @@ Fonts:
    .feature-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 90%;
     margin: auto;
    }
@@ -332,7 +329,6 @@ Fonts:
    .f-product-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
@@ -558,8 +554,8 @@ Fonts:
    .newsletter-container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
+    align-items: center;
     height: 150px;
     background-image: url(assets/banner/b14.png);
     background-color: var(--dark-color);
@@ -606,6 +602,79 @@ Fonts:
     line-height: 1;
     margin-bottom: .5rem;
    }
+
+
+   /* ----------Footer Section-------------- */
+   footer{
+    margin: 2rem 0 0 0;
+    padding: 1rem 0;
+   
+   }
+   .footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 1rem;
+    margin: auto;
+    font-size: var(--font-small);
+    color: gray;
+    
+   }
+   .footer-container li{
+    margin-bottom: .5rem;
+   }
+   .footer-container span a i{
+    font-size: 1rem;
+   }
+   .footer-card-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+   }
+   .footer-card-about{
+    width: 20%;
+   }
+   .footer-card-account{
+    width: 20%;
+   }
+   .footer-card-app{
+    width: 30%;
+   }
+   .footer-logo img{
+    margin-bottom: .5rem;
+    width: 20%;
+   }
+   .account li:nth-child(1),
+   .about li:nth-child(1),
+   .app li:nth-child(1),
+   .footer-card-contact .title{
+    margin-bottom: .5rem;
+    font-weight: var(--fw7);
+    color: var(--dark-color);
+   }
+.footer-CTA-btn-apple,
+.footer-CTA-btn-google{
+    padding: 0 .6rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+}
+.footer-CTA-btn-apple i,
+.footer-CTA-btn-google i{
+    margin-right: .3rem;
+}
+.social-icon{
+    margin: .5rem 0;
+}
+.sub-footer{
+    width: 100%;
+    font-size: var(--font-small);
+    color: gray;
+    text-align: center;
+}
     /*----------------------
      01. HEADER
      *-----------------------
@@ -613,7 +682,39 @@ Fonts:
    ------------------------ */
 
 
-
+/* 
+/* test */
+/* .test{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border: 1px solid green;
+}
+.row-test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    width: 90%;
+    margin: auto;
+    border: 1px solid purple;
+}
+.test-container{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.test-card-left{
+    width: 32%;
+    border: 1px solid red;
+}
+.test-card-middle{
+    width: 32%;
+    border: 1px solid red;
+}
+.test-card-right{
+    width: 32%;
+    border: 1px solid red;
+} */ 
 
 
 
