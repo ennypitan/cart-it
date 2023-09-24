@@ -1,0 +1,232 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .row {
+    flex-flow: column wrap;
+  }
+  nav {
+    display: none;
+  }
+
+  /* ---------- Hero Section-------------- */
+  .hero-page {
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
+  }
+  .hero-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .left-hero-card {
+    width: 100%;
+  }
+  .right-hero-card {
+    display: none;
+  }
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .hero-subtext {
+    text-align: justify;
+  }
+
+  /* ---------- Feaure Section----------------- */
+  .feature {
+    margin: 1rem 0;
+  }
+  .feature-container {
+    flex-direction: column;
+  }
+  .feature-card {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .feature-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  .feature-image {
+    width: 95%;
+    height: 80%;
+  }
+
+  /* ------------- f-product section---------------- */
+  .f-product {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  .f-product .row .row {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .f-product-headings {
+    font-size: 1.5rem;
+  }
+
+  .f-product-container {
+    flex-direction: column;
+    width: 80%;
+    max-width: 450px;
+  }
+  .f-product-card {
+    width: 100%;
+  }
+
+  .product-image {
+    min-width: 100%;
+  }
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 1rem 0;
+  }
+  .prod-name {
+    font-family: "Poppins";
+    font-weight: var(--fw6);
+  }
+  .price-tag {
+    font-size: 1rem;
+  }
+  .price-tag .cart a i {
+    text-align: center;
+    transform: translateX(60%);
+  }
+
+  /* ---------Product Banner------------- */
+  .product-banner {
+    margin: 2rem 0;
+  }
+
+  .banner-tag {
+    font-size: 0.6rem;
+  }
+  .banner-text {
+    font-size: 1.2rem;
+  }
+
+  .banner-btn {
+    padding: 0.5rem 1rem;
+  }
+  /* --------- Banner Section------------ */
+  /* Double Banner */
+  .double-banner {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  .double-banner-container {
+    flex-direction: column;
+  }
+  .double-banner-card:nth-child(1) {
+    width: 100%;
+    height: 60vh;
+  }
+  .double-banner-card:nth-child(2) {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .double-banner-card span:nth-child(2) {
+    font-weight: var(--fw6);
+    font-size: 1.5rem;
+  }
+  .double-banner-card span:nth-child(3) {
+    font-size: var(--font-small);
+    padding-bottom: 0.5rem;
+  }
+  /* Tripple Banner */
+  .tripple-banner-container {
+    flex-direction: column;
+  }
+  .tripple-banner-card:nth-child(1) {
+    width: 100%;
+    height: 40vh;
+  }
+  .tripple-banner-card:nth-child(2) {
+    width: 100%;
+    height: 40vh;
+  }
+  .tripple-banner-card:nth-child(3) {
+    width: 100%;
+    height: 40vh;
+  }
+  .tripple-banner-card span:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  /* --------------Newsletter Section---------------- */
+  .newsletter {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  .newsletter-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .newsletter-card {
+    width: 100%;
+  }
+  .newsletter-card:nth-child(2) {
+    align-content: flex-end;
+  }
+  .input-field {
+    position: relative;
+  }
+  .news-input {
+    width: 100%;
+  }
+  .news-btn {
+    right: 0;
+  }
+  .news-heading {
+    font-size: 1.5rem;
+  }
+  .news-subtext {
+    font-size: var(--font-small);
+    margin-bottom: 0.5rem;
+  }
+
+  /* ----------Footer Section-------------- */
+  footer {
+    margin: 1rem 0 0 0;
+    padding: 1rem 0;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-container li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-container span a i {
+    font-size: 1rem;
+  }
+  .footer-card-contact {
+    width: 45%;
+  }
+  .footer-card-about {
+    width: 45%;
+  }
+  .footer-card-account {
+    width: 100%;
+  }
+  .footer-card-app {
+    width: 100%;
+  }
+  .footer-logo img {
+    margin-bottom: 0.5rem;
+    width: 50%;
+  }
+
+  .sub-footer {
+    width: 100%;
+    font-size: var(--font-small);
+    color: gray;
+    text-align: center;
+  }
+}

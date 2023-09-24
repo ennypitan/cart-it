@@ -1,566 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart-It</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Media Query -->
+    <link rel="stylesheet" href="mediaquery.css" />
 
     <!-- Remix Icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <nav>
-        <div class="row">
-            <div class="nav-container">
-                <div class="logo"><img src="assets/primary-logo.png"></div>
-                <div class="nav-menu">
-                    <ul class="nav-bar">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li class="cart"><a href=""><i class="ri-shopping-basket-line"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="row">
+        <div class="nav-container">
+          <div class="logo"><img src="assets/primary-logo.png" /></div>
+          <div class="nav-menu">
+            <ul class="nav-bar">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li class="cart">
+                <a href=""><i class="ri-shopping-basket-line"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-       </nav>
-       <!-- End od Nav Bar -->
-      <!-- Hero Section -->
-      <section class="hero-page">
-        <div class="row">
-            <div class="hero-container">
-                <div class="left-hero-card">
-                    <div class="hero-text">Discover, Choose, <strong>Cart It!</strong> Your Ultimate Shopping Destination</div>
-                    <div class="hero-subtext">Step into a world of endless possibilities – Discover a curated selection, Choose what suits your style, and effortlessly Cart It, all in one place. Welcome to your Ultimate Shopping Destination, where your desires come to life with just a click.</div>
-                    <div class="btn-container">
-                        <button class="shop-btn">Shop Now</button>
-                    <button class="CTA-btn"><i class="fa-brands fa-google-play"></i> | <i class="fa-brands fa-apple"></i> Download App</button>
-                    </div>
-                </div>
-                <div class="right-hero-card"></div>
-                
+      </div>
+    </nav>
+    <!-- End od Nav Bar -->
+    <!-- Hero Section -->
+    <section class="hero-page">
+      <div class="row">
+        <div class="hero-container">
+          <div class="left-hero-card">
+            <div class="hero-text">
+              Discover, Choose, <strong>Cart It!</strong> Your Ultimate Shopping
+              Destination
             </div>
+            <div class="hero-subtext">
+              Step into a world of endless possibilities – Discover a curated
+              selection, Choose what suits your style, and effortlessly Cart It,
+              all in one place. Welcome to your Ultimate Shopping Destination,
+              where your desires come to life with just a click.
+            </div>
+            <div class="btn-container">
+              <button class="shop-btn">Shop Now</button>
+              <button class="CTA-btn">
+                <i class="fa-brands fa-google-play"></i> |
+                <i class="fa-brands fa-apple"></i> Download App
+              </button>
+            </div>
+          </div>
+          <div class="right-hero-card"></div>
         </div>
-       </section><!-- End of Hero Section -->
-       <!-- Feature Section -->
-       <section class="feature">
-        <div class="row">
-            <div class="feature-container">
-                <div class="feature-card">
-                    <div class="feature-image"><img src="assets/banner/undraw_delivery_truck_vt6p.png" alt=""></div>
-                    <div class="feature-text">Free Shopping</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-image"><img src="assets/banner/undraw_Online_payments_re_y8f2.png" alt=""></div>
-                    <div class="feature-text">Online Order</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-image"><img src="assets/banner/undraw_Vault_re_s4my.png" alt=""></div>
-                    <div class="feature-text">Save Money</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-image"><img src="assets/banner/undraw_online_ad_re_ol62.png" alt=""></div>
-                    <div class="feature-text">Promotions</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-image"><img src="assets/banner/undraw_Online_party_re_7t6g.png" alt=""></div>
-                    <div class="feature-text">Happy Sell</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-image"><img src="assets/banner/undraw_Connecting_Teams_re_hno7.png" alt=""></div>
-                    <div class="feature-text">24/7 Support</div>
-                </div>
+      </div>
+    </section>
+    <!-- End of Hero Section -->
+    <!-- Feature Section -->
+    <section class="feature">
+      <div class="row">
+        <div class="feature-container">
+          <div class="feature-card">
+            <div class="feature-image">
+              <img src="assets/banner/undraw_delivery_truck_vt6p.png" alt="" />
             </div>
+            <div class="feature-text">Free Shopping</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-image">
+              <img
+                src="assets/banner/undraw_Online_payments_re_y8f2.png"
+                alt=""
+              />
+            </div>
+            <div class="feature-text">Online Order</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-image">
+              <img src="assets/banner/undraw_Vault_re_s4my.png" alt="" />
+            </div>
+            <div class="feature-text">Save Money</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-image">
+              <img src="assets/banner/undraw_online_ad_re_ol62.png" alt="" />
+            </div>
+            <div class="feature-text">Promotions</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-image">
+              <img src="assets/banner/undraw_Online_party_re_7t6g.png" alt="" />
+            </div>
+            <div class="feature-text">Happy Sell</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-image">
+              <img
+                src="assets/banner/undraw_Connecting_Teams_re_hno7.png"
+                alt=""
+              />
+            </div>
+            <div class="feature-text">24/7 Support</div>
+          </div>
         </div>
-       </section>
-       <!-- End of Feature Section -->
-       <!-- f-product section -->
-       <section class="f-product">
+      </div>
+    </section>
+    <!-- End of Feature Section -->
+    <!-- f-product section -->
+    <section class="f-product">
+      <div class="row">
         <div class="row">
-            <div class="row">
-                <div class="f-product-headings">Featured Product</div>
-            <div class="f-product-sub-headings">Summer Collecions New Modern Design</div>
-            </div>
-            <div class="f-product-container">
-                <div class="f-product-card" onclick="window.location.href='singleProduct.html';">
-                    <div class="product-image"><img src="assets/products/f1.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">adidas</div>
-                        <div class="prod-name">Cartoon Astronut T-Shirt</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;7,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/apparel2.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">zara</div>
-                        <div class="prod-name">Jacket & Short</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;17,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/apparel5.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/apparel3.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">zara</div>
-                        <div class="prod-name">Plain Black Gown with Hat</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;27,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/shoe1-1.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">nike</div>
-                        <div class="prod-name">Running footwear - nike</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;15,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/f3.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/f6.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/shoe2.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-            </div>
+          <div class="f-product-headings">Featured Product</div>
+          <div class="f-product-sub-headings">
+            Summer Collecions New Modern Design
+          </div>
         </div>
-       </section>
-       <!-- End of f-product Section -->
-       <!-- product-Banner Section -->
-       <section class="product-banner">
+        <div class="f-product-container">
+          <div
+            class="f-product-card"
+            onclick="window.location.href='singleProduct.html';"
+          >
+            <div class="product-image">
+              <img src="assets/products/f1.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">adidas</div>
+              <div class="prod-name">Cartoon Astronut T-Shirt</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;7,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/apparel2.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">zara</div>
+              <div class="prod-name">Jacket & Short</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;17,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/apparel5.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/apparel3.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">zara</div>
+              <div class="prod-name">Plain Black Gown with Hat</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;27,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/shoe1-1.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">nike</div>
+              <div class="prod-name">Running footwear - nike</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;15,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/f3.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/f6.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/shoe2.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of f-product Section -->
+    <!-- product-Banner Section -->
+    <section class="product-banner">
+      <div class="row">
+        <div class="banner-container">
+          <div class="banner-tag">Repair Services</div>
+          <div class="banner-text">
+            Up to <span>70% Off</span> - All T-Shirts & Accessories
+          </div>
+          <button class="banner-btn"><a href="">Explore More</a></button>
+        </div>
+      </div>
+    </section>
+    <!--End of  product-Banner Section -->
+    <!-- New Arrival Section -->
+    <section class="f-product">
+      <div class="row">
         <div class="row">
-            <div class="banner-container">
-                <div class="banner-tag">Repair Services</div>
-                <div class="banner-text">Up to <span>70% Off</span> - All T-Shirts & Accessories</div>
-                <button class="banner-btn"><a href="">Explore More</a></button>
-            </div>
+          <div class="f-product-headings">New Arrival</div>
+          <div class="f-product-sub-headings">
+            Summer Collecions New Modern Design
+          </div>
         </div>
-       </section>
-       <!--End of  product-Banner Section -->
-       <!-- New Arrival Section -->
-       <section class="f-product">
-        <div class="row">
-            <div class="row">
-                <div class="f-product-headings">New Arrival</div>
-            <div class="f-product-sub-headings">Summer Collecions New Modern Design</div>
+        <div class="f-product-container">
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n1.jpg" alt="" />
             </div>
-            <div class="f-product-container">
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n1.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">adidas</div>
-                        <div class="prod-name">Cartoon Astronut T-Shirt</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;7,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n2.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">zara</div>
-                        <div class="prod-name">Jacket & Short</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;17,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n3.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n4.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">zara</div>
-                        <div class="prod-name">Plain Black Gown with Hat</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;27,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n5.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">nike</div>
-                        <div class="prod-name">Running footwear - nike</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;15,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n6.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n7.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
-                <div class="f-product-card">
-                    <div class="product-image"><img src="assets/products/n8.jpg" alt=""></div>
-                    <div class="product-info">
-                        <div class="brand">H&M</div>
-                        <div class="prod-name">Stylish Gown</div>
-                        <div class="star">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half' ></i>
-                        </div>
-                       <div class="price-tag">
-                            <span class="price">&#8358;12,000</span>
-                            <span class="cart">
-                               <a href=""> <i class='bx bx-cart-alt' ></i></a>
-                            </span>
-                       </div>
-                    </div>
-                </div>
+            <div class="product-info">
+              <div class="brand">adidas</div>
+              <div class="prod-name">Cartoon Astronut T-Shirt</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;7,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
             </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n2.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">zara</div>
+              <div class="prod-name">Jacket & Short</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;17,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n3.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n4.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">zara</div>
+              <div class="prod-name">Plain Black Gown with Hat</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;27,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n5.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">nike</div>
+              <div class="prod-name">Running footwear - nike</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;15,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n6.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n7.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="f-product-card">
+            <div class="product-image">
+              <img src="assets/products/n8.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <div class="brand">H&M</div>
+              <div class="prod-name">Stylish Gown</div>
+              <div class="star">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="price-tag">
+                <span class="price">&#8358;12,000</span>
+                <span class="cart">
+                  <a href=""> <i class="bx bx-cart-alt"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-       </section>
-       <!-- End of New Arrival Section -->
-       <!-- Banner Section -->
-       <!-- Double Banner -->
-       <section class="double-banner">
-        <div class="row">
-            <div class="double-banner-container">
-                <div class="double-banner-card">
-                    <span>crazy deals</span>
-                    <span>buy 1 get 1 free</span>
-                    <span>the best classic dress is on sale at Cart-It</span>
-                    <button class="double-btn1">Learn More</button>
-                </div>
-                <div class="double-banner-card">
-                    <span>spring/summer</span>
-                    <span>upcomming season</span>
-                    <span>the best classic dress is on sale at Cart-It</span>
-                    <button class="double-btn2"><a href="shop.html">Collection</a></button>
-                </div>
-            </div>
+      </div>
+    </section>
+    <!-- End of New Arrival Section -->
+    <!-- Banner Section -->
+    <!-- Double Banner -->
+    <section class="double-banner">
+      <div class="row">
+        <div class="double-banner-container">
+          <div class="double-banner-card">
+            <span>crazy deals</span>
+            <span>buy 1 get 1 free</span>
+            <span>the best classic dress is on sale at Cart-It</span>
+            <button class="double-btn1">Learn More</button>
+          </div>
+          <div class="double-banner-card">
+            <span>spring/summer</span>
+            <span>upcomming season</span>
+            <span>the best classic dress is on sale at Cart-It</span>
+            <button class="double-btn2">
+              <a href="shop.html">Collection</a>
+            </button>
+          </div>
         </div>
-        <!-- Tripple Banner -->
-        <div class="row">
-            <div class="tripple-banner-container">
-                <div class="tripple-banner-card">
-                    <span>season sale</span>
-                    <span>Winter Collection - 50% Off</span>
-                </div>
-                <div class="tripple-banner-card">
-                    <span>new footwear collection</span>
-                    <span>Spring/Summer 2023</span>
-                </div>
-                <div class="tripple-banner-card">
-                    <span>T-Shirts</span>
-                    <span>New Trendy Prints</span>
-                </div>
-            </div>
+      </div>
+      <!-- Tripple Banner -->
+      <div class="row">
+        <div class="tripple-banner-container">
+          <div class="tripple-banner-card">
+            <span>season sale</span>
+            <span>Winter Collection - 50% Off</span>
+          </div>
+          <div class="tripple-banner-card">
+            <span>new footwear collection</span>
+            <span>Spring/Summer 2023</span>
+          </div>
+          <div class="tripple-banner-card">
+            <span>T-Shirts</span>
+            <span>New Trendy Prints</span>
+          </div>
         </div>
-       </section><!-- End of  Banner Secion -->
+      </div>
+    </section>
+    <!-- End of  Banner Secion -->
 
-       <!-- Newsletter Section -->
-       <section class="newsletter">
-        <div class="row">
-            <div class="newsletter-container">
-                <div class="newsletter-card">
-                    <div class="news-heading">Sign Up For Newsletter</div>
-                    <div class="news-subtext">Get news update about our latest shop and special offers.</div>
-                </div>
-                <div class="newsletter-card">
-                    <form action="">
-                       <div class="input-field">
-                        <input type="text"
-                        placeholder="Your email address"
-                        class="news-input">
-                        <button class="news-btn">Sign Up</button>
-                       </div>
-                    </form>
-                </div>
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="row">
+        <div class="newsletter-container">
+          <div class="newsletter-card">
+            <div class="news-heading">Sign Up For Newsletter</div>
+            <div class="news-subtext">
+              Get news update about our latest shop and special offers.
             </div>
+          </div>
+          <div class="newsletter-card">
+            <form action="">
+              <div class="input-field">
+                <input
+                  type="text"
+                  placeholder="Your email address"
+                  class="news-input"
+                />
+                <button class="news-btn">Sign Up</button>
+              </div>
+            </form>
+          </div>
         </div>
-       </section>
-       <!-- End of Newsletter Section -->
-       <footer>
-        <div class="row">
-            <div class="footer-container">
-                <div class="footer-card-contact">
-                    <div class="footer-logo"><img src="assets/secondary-logo.png" alt=""></div>
-                    <span class="title">Contact</span>
-                    <span><strong>Address</strong>: 13,Majekodunmi Street Ikeja Lagos</span>
-                    <span><strong>Phone Number</strong>: +234 813 862 8486</span>
-                    <span><strong>Hours</strong>: 24/7</span>
-                    <span class="social-icon">Follow Us</span>
-                    <span>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-                    </span>
-                </div>
-                <div class="footer-card-about">
-                    <ul class="about">
-                        <li>About</li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Delivery Information</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card-account">
-                    <ul class="account">
-                        <li>My Account</li>
-                        <li><a href="">Sign In</a></li>
-                        <li><a href="">View Cart</a></li>
-                        <li><a href="">My Wishlist</a></li>
-                        <li><a href="">Track My Order</a></li>
-                        <li><a href="">Help</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card-app">
-                    <ul class="app">
-                        <li>Install App</li>
-                        <li>From App Store or Google Play</li>
-                        <li>
-                            <button class="footer-CTA-btn-apple"> <i class="fa-brands fa-apple"></i>App Store</button>
-                            <button class="footer-CTA-btn-google"> <i class="fa-brands fa-google-play"></i>Google Play</button>
-                        </li>
-                        <li>Secured payment gateways</li>
-                        <li>
-                            <img src="assets/pay.png" alt="">
-                        </li>
-                        
-                    </ul>
-                </div> 
+      </div>
+    </section>
+    <!-- End of Newsletter Section -->
+    <footer>
+      <div class="row">
+        <div class="footer-container">
+          <div class="footer-card-contact">
+            <div class="footer-logo">
+              <img src="assets/secondary-logo.png" alt="" />
             </div>
+            <span class="title">Contact</span>
+            <span
+              ><strong>Address</strong>: 13,Majekodunmi Street Ikeja Lagos</span
+            >
+            <span><strong>Phone Number</strong>: +234 813 862 8486</span>
+            <span><strong>Hours</strong>: 24/7</span>
+            <span class="social-icon">Follow Us</span>
+            <span>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </span>
+          </div>
+          <div class="footer-card-about">
+            <ul class="about">
+              <li>About</li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery Information</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-card-account">
+            <ul class="account">
+              <li>My Account</li>
+              <li><a href="">Sign In</a></li>
+              <li><a href="">View Cart</a></li>
+              <li><a href="">My Wishlist</a></li>
+              <li><a href="">Track My Order</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+          <div class="footer-card-app">
+            <ul class="app">
+              <li>Install App</li>
+              <li>From App Store or Google Play</li>
+              <li>
+                <button class="footer-CTA-btn-apple">
+                  <i class="fa-brands fa-apple"></i>App Store
+                </button>
+                <button class="footer-CTA-btn-google">
+                  <i class="fa-brands fa-google-play"></i>Google Play
+                </button>
+              </li>
+              <li>Secured payment gateways</li>
+              <li>
+                <img src="assets/pay.png" alt="" />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-            <div class="sub-footer">
-                website developed by ennypitan
-            </div>
-        </div>
-       </footer>
-       
+      </div>
+      <div class="row">
+        <div class="sub-footer">website developed by ennypitan</div>
+      </div>
+    </footer>
 
-     
-
-<!--        
+    <!--        
        <section class="test">
         <div class="row-test">
             <div class="test-container">
@@ -571,14 +666,6 @@
         </div>
      </section> -->
 
-    
-
-
-
-
-
-
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
